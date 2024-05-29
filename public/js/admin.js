@@ -8,14 +8,15 @@ $(document).ready(function() {
     function fetchUsuarios() {
         console.log('Fetching users3...');
         $.ajax({
-            url: '/api/usuarios', // Asegúrate de que la ruta coincide con tu API
+            url: 'https://redundancia1000.duckdns.org/api/usuarios', // Updated URL
             method: 'GET',
             success: function(data) {
                 console.log('Usuarios:', data);
                 renderUsuarios(data);
             },
             error: function(error) {
-                console.error('Error:', error);
+                console.error('Error fetching users:', error);
+                alert('Error fetching users. Please check the console for more details.');
             }
         });
     }
@@ -45,7 +46,7 @@ $(document).ready(function() {
         if (id_usuario) {
             // Actualizar usuario
             $.ajax({
-                url: `/api/usuarios/${id_usuario}`,
+                url: `https://redundancia1000.duckdns.org/api/usuarios/${id_usuario}`,
                 method: 'PUT',
                 data: { username, contrasena, admin },
                 success: function(response) {
@@ -54,14 +55,14 @@ $(document).ready(function() {
                     $('#editContainer').hide();
                 },
                 error: function(error) {
-                    console.error('Error:', error);
+                    console.error('Error updating user:', error);
                     swal("Error!", "Could not update user.", "error");
                 }
             });
         } else {
             // Crear usuario
             $.ajax({
-                url: '/api/usuarios',
+                url: 'https://redundancia1000.duckdns.org/api/usuarios',
                 method: 'POST',
                 data: { username, contrasena, admin },
                 success: function(response) {
@@ -69,7 +70,7 @@ $(document).ready(function() {
                     fetchUsuarios();
                 },
                 error: function(error) {
-                    console.error('Error:', error);
+                    console.error('Error creating user:', error);
                     swal("Error!", "Could not create user.", "error");
                 }
             });
@@ -80,14 +81,14 @@ $(document).ready(function() {
     $('#userList').on('click', '.deleteButton', function() {
         const id_usuario = $(this).data('id');
         $.ajax({
-            url: `/api/usuarios/${id_usuario}`,
+            url: `https://redundancia1000.duckdns.org/api/usuarios/${id_usuario}`,
             method: 'DELETE',
             success: function(response) {
                 swal("Success!", response.message, "success");
                 fetchUsuarios();
             },
             error: function(error) {
-                console.error('Error:', error);
+                console.error('Error deleting user:', error);
                 swal("Error!", "Could not delete user.", "error");
             }
         });
