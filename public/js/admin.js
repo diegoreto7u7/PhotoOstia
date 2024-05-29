@@ -8,7 +8,7 @@ $(document).ready(function() {
     function fetchUsuarios() {
         console.log('Fetching users3...');
         $.ajax({
-            url: 'https://redundancia1000.duckdns.org/api/usuarios', // Updated URL
+            url: 'https://photoplayredundancia.duckdns.org/api/usuarios', // Updated URL
             method: 'GET',
             success: function(data) {
                 console.log('Usuarios:', data);
@@ -46,7 +46,7 @@ $(document).ready(function() {
         if (id_usuario) {
             // Actualizar usuario
             $.ajax({
-                url: `https://redundancia1000.duckdns.org/api/usuarios/${id_usuario}`,
+                url: `https://photoplayredundancia.duckdns.org/api/usuarios/${id_usuario}`,
                 method: 'PUT',
                 data: { username, contrasena, admin },
                 success: function(response) {
@@ -62,7 +62,7 @@ $(document).ready(function() {
         } else {
             // Crear usuario
             $.ajax({
-                url: 'https://redundancia1000.duckdns.org/api/usuarios',
+                url: 'https://photoplayredundancia.duckdns.org/api/usuarios',
                 method: 'POST',
                 data: { username, contrasena, admin },
                 success: function(response) {
@@ -81,7 +81,7 @@ $(document).ready(function() {
     $('#userList').on('click', '.deleteButton', function() {
         const id_usuario = $(this).data('id');
         $.ajax({
-            url: `https://redundancia1000.duckdns.org/api/usuarios/${id_usuario}`,
+            url: `https://photoplayredundancia.duckdns.org/api/usuarios/${id_usuario}`,
             method: 'DELETE',
             success: function(response) {
                 swal("Success!", response.message, "success");
