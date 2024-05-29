@@ -1,10 +1,12 @@
 $(document).ready(function() {
+    console.log('Admin page loaded...');
     // Obtener usuarios al cargar la página
     fetchUsuarios();
+    console.log('Fetching users2...');
 
     // Función para obtener usuarios
     function fetchUsuarios() {
-        console.log('Fetching users...');
+        console.log('Fetching users3...');
         $.ajax({
             url: '/api/usuarios', // Asegúrate de que la ruta coincide con tu API
             method: 'GET',
