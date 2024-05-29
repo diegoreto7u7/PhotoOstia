@@ -4,6 +4,7 @@ $(document).ready(function() {
 
     // Función para obtener usuarios
     function fetchUsuarios() {
+        console.log('Fetching users...');
         $.ajax({
             url: '/api/usuarios', // Asegúrate de que la ruta coincide con tu API
             method: 'GET',
