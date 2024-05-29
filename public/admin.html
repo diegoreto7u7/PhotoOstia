@@ -9,36 +9,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/comun.css">
     <link rel="stylesheet" href="css/admin.css">
+    <title>Admin Panel</title>
 </head>
 <body class="text-center">
 
-<header >
+<header>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #685bd9;">
-        
-        <a class="navbar-brand" href="index.html" ><img src="imagenes/preguntados2edit.png" id="logo-preguntados" width="150" height="150" class="d-inline-block align-center"></a>
-        <div clas="collapse navbar-collapse" id="navbarNav">
+        <a class="navbar-brand" href="index.html"><img src="imagenes/preguntados2edit.png" id="logo-preguntados" width="150" height="150" class="d-inline-block align-center"></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                
-            
-                <li class="nav-item px-5"><a class="text-white text-decoration-none " style="font-size: 200%"  href="leaderboard.html">Leaderboard</a></li>
-                <li class="nav-item px-5"><a class="text-white text-decoration-none" style="font-size: 200%"   href="registro.html">Register</a> </li>
-                <li class="nav-item px-5"><a class="text-white text-decoration-none" style="font-size: 200%"   href="login.html">Login</a></li>
-                
-                
-            </ul>
-            <ul class="right">
-                
+                <li class="nav-item px-5"><a class="text-white text-decoration-none" style="font-size: 200%" href="leaderboard.html">Leaderboard</a></li>
+                <li class="nav-item px-5"><a class="text-white text-decoration-none" style="font-size: 200%" href="registro.html">Register</a></li>
+                <li class="nav-item px-5"><a class="text-white text-decoration-none" style="font-size: 200%" href="login.html">Login</a></li>
             </ul>
         </div>
     </nav>
 </header>
-<main role="main" class="innercover">
-    <div class="container-fluid bg-dark" >
-        <div class="d-flex justify-content-center">
-            
-        </div>
 
-        <div class="container-lg" style="background-color: #685bd9; margin-top: 2%;"  id="user-scores">
+<main role="main" class="innercover">
+    <div class="container-fluid bg-dark">
+        <div class="d-flex justify-content-center"></div>
+        <div class="container-lg" style="background-color: #685bd9; margin-top: 2%;" id="user-scores">
             <div class="text-center">
                 <h2>Users</h2>
                 <hr>
@@ -46,120 +37,26 @@
             <div class="container-lg" id="editContainer" style="display: none;">
                 <form class="edit-form">
                     <div class="form-group">
-                        <label for="score">Score</label>
-                        <input type="text" class="form-control" id="score-edit" aria-describedby="scoreEdit">
-                        
-                      </div>
-                      <div class="form-group">
-                        <label for="scoreFecha">Fecha</label>
-                        <input type="date" class="form-control" id="score-fecha" >
-                      </div>
-                     
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                        <label for="username-edit">Username</label>
+                        <input type="text" class="form-control" id="username-edit" aria-describedby="usernameEdit">
+                    </div>
+                    <div class="form-group">
+                        <label for="contrasena-edit">Password</label>
+                        <input type="password" class="form-control" id="contrasena-edit">
+                    </div>
+                    <div class="form-group">
+                        <label for="admin-edit">Admin</label>
+                        <input type="checkbox" class="form-control" id="admin-edit">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
             <div class="container user-container">
-                
-                
-                <ul class="userboard" id="userList">
-                    <li class="user-item">
-                        
-                        <span class="user-name">Ruben</span>
-                        
-                        <button class="scoresButton">Scores</button>
-                        <button class="deleteButton">Delete</button>
-                        
-                    </li>
-                    <li class="user-item">
-                        
-                        <span class="player-name">Ruben</span>
-                        <span class="score">99999999</span>
-                    </li>
-                    <li class="user-item">
-                        
-                        <span class="player-name">Ruben</span>
-                        <span class="score">99999999</span>
-                    </li>
-                    <li class="user-item">
-                        
-                        <span class="player-name">Ruben</span>
-                        <span class="score">99999999</span>
-                    </li>
-                    <li class="user-item">
-                        
-                        <span class="player-name">Ruben</span>
-                        <span class="score">99999999</span>
-                    </li>
-                </ul>
+                <ul class="userboard" id="userList"></ul>
             </div>
-            
-                <!--<table class="score-table">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">Score</th>
-                            <th scope="col">Fecha</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="score-row">
-                            <td>
-                                Usuario
-                            </td>
-                            <td>
-                                score
-                            </td>
-                            <td>
-                                2024/04/6
-                            </td>
-                        </tr>
-                        <tr class="score-row">
-                            <td>
-                                Usuario
-                            </td>
-                            <td>
-                                score
-                            </td>
-                            <td>
-                                2024/04/6
-                            </td>
-                        </tr>
-                        <tr class="score-row">
-                            <td>
-                                Usuario
-                            </td>
-                            <td>
-                                score
-                            </td>
-                            <td>
-                                2024/04/6
-                            </td>
-                        </tr>
-                        <tr class="score-row">
-                            <td>
-                                Usuario
-                            </td>
-                            <td>
-                                score
-                            </td>
-                            <td>
-                                2024/04/6
-                            </td>
-                            <td>
-                                <div class="botonesEditar">
-                                    <button type="button" class="btn btn-primary btn-sm" id="scoreButton">Scores</button>
-                                    <button type="button" class="btn btn-primary btn-sm" id="usersButton">Users</button>
-
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>-->
-
-            
         </div>
         <hr>
     </div>
-
 </main>
 
 <footer class="footer bg-sucess text-center">
@@ -170,14 +67,12 @@
             <li class="list-inline-item"><a href="#"><img width="40" height="40" src="/imagenes/signo-de-twitter.png"></a></li>
             <li class="list-inline-item"><a href="#"><img width="40" height="40" src="/imagenes/instagram.png"></a></li>
         </ul>
-        
     </div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/admin.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
 </body>
 </html>
