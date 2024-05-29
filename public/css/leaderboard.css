@@ -1,0 +1,141 @@
+body {
+    background-color: #081e35;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header nav a {
+    font-size: 1.5rem;
+    padding: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.innercover {
+    flex: 1;
+    padding: 50px 0;
+}
+
+.text-decoration-underline {
+    text-decoration: underline;
+}
+
+.lh-lg {
+    line-height: 1.75;
+}
+
+footer .footer-links a img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer {
+    background-color: #685bd9; /* Ajusta el color de fondo según sea necesario */
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Estilos adicionales */
+.h3-leaderboard {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.leaderboard-item:hover {
+    background-color: #e6e6e6;
+    transition: background-color 0.3s ease;
+}
+
+.leaderboard-container {
+    margin-bottom: 20px;
+}
+
+.leaderboard {
+    list-style: none;
+    padding: 0;
+}
+
+.leaderboard-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.player-name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.score {
+    font-size: 20px;
+    background-color: #081e35;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.container-leaderboard {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.leaderboard-container {
+    background-color: #685bd9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.leaderboard-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.player-name {
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.score {
+    font-size: 20px;
+    background-color: #241d61;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+}

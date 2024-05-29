@@ -1,0 +1,100 @@
+body{
+    background-color: #081e35;
+}
+.username {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+
+
+.leaderboard-container{
+    margin-bottom: 20px;
+/*     margin-top: 100px; */
+}
+
+.scoreboard {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+
+
+.user-score, .score-date {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+
+.container-leaderboard {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.leaderboard-container {
+    background-color: #685bd9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.scoreboard-item{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.scoreboard-item:hover {
+    background-color: #e6e6e6;
+    transition: background-color 0.3s ease;
+}
+
+.edit-score, .delete-score{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+.edit-score:hover, .delete-score:hover{
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+#edit-form{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+}
+.form-group{
+    margin-right: 20%;
+}
+
+
+
+
+
+
+
+
+
+

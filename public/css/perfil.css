@@ -1,0 +1,30 @@
+#user-scores{
+    margin-top: 300%;
+    background-color: #685bd9;
+    border-radius: 10px;
+    padding:10px;
+}
+#editUsername{
+    margin-left:3%;
+}
+#usernameEdit{
+    margin-top: 10px;
+}
+
+
+.score-row{
+    padding:10px;
+    border: 2px solid;
+    background-color: rgb(43, 43, 43);
+    border-radius: 300px;
+    color:white;
+    border-bottom: 15px solid transparent;
+    background-clip: padding-box;
+}
+table{
+    border-collapse: collapse; 
+    
+    border-spacing: 3em;
+    width: 100%;
+    table-layout: fixed;
+}

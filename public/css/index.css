@@ -1,0 +1,145 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jaro', sans-serif;
+    background-color: red;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header nav a {
+    font-size: 1.5rem;
+    padding: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: #5a4fcf; /* Purple background for the navbar */
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.5rem;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.innercover {
+    flex: 1;
+    padding: 50px 0;
+}
+
+.text-decoration-underline {
+    text-decoration: underline;
+}
+
+.lh-lg {
+    line-height: 1.75;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.text-section h1 {
+    color: #5a4fcf; /* Purple color for headings */
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.image-left, .image-right, .image-centered, .image-group, .small-image-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.image-left, .image-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-left img, .image-right img {
+    max-width: 30%;
+    border: 2px solid #5a4fcf;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.image-centered img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #5a4fcf;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.image-group, .small-image-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-group img, .small-image-group img {
+    max-width: 23%;
+    border: 2px solid #5a4fcf;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.footer {
+    background-color: #5a4fcf; /* Purple background for the footer */
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+}
+
+.footer-links a img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer p {
+    margin: 0;
+}

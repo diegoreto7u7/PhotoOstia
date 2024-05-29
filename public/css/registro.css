@@ -1,0 +1,18 @@
+
+.password-container {
+    position: relative;
+}
+.password-container input {
+    padding-right: 40px; /* Space for the eye icon */
+}
+.password-container .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.card{
+    background-color: #685bd9;
+    color:white;
+}
