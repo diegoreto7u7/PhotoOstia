@@ -8,6 +8,7 @@ $(document).ready(function() {
             url: '/api/usuarios', // Asegúrate de que la ruta coincide con tu API
             method: 'GET',
             success: function(data) {
+                console.log('Usuarios:', data);
                 renderUsuarios(data);
             },
             error: function(error) {
